@@ -10,4 +10,31 @@
     --neutral-900: #222434;
 
     --image: url(https://wealins.com/uploads/b74aa1aaa8b597aa2d9df5da0bc053e4.jpeg);
+
+    --max-width: 1048px;
+}
+
+/* Navigation */
+
+nav[class*="cmpsr"][class*="cmpsr"] {
+    width: 100%;
+    max-width: var(--max-width);
+    margin:  0 auto;
+}
+
+.nav-item.nav-item.nav-item {
+    border-color: transparent;
+    color: var(--primary-600);
+}
+
+.nav-item.nav-item.nav-item:hover,
+.nav-item.nav-item.nav-item:focus,
+.nav-item.nav-item.nav-item.active {
+    border-color: transparent;
+    border-bottom-color: var(--primary-300);
+    color: var(--primary-700);
+}
+
+.nav-item.nav-item.nav-item.active {
+    border-bottom-color: var(--primary-500);
 }
