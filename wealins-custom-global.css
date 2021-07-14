@@ -38,3 +38,20 @@ nav[class*="cmpsr"][class*="cmpsr"] {
 .nav-item.nav-item.nav-item.active {
     border-bottom-color: var(--primary-500);
 }
+
+/* Box-container */
+
+.white-panel, 
+.registration .public-attendee-form-container.add-new-participant, 
+.registration .main-card.add-new-participant,
+.registration .public-attendee-form-container.retrieve,
+.registration .main-card.retrieve, 
+.registration .public-attendee-form-container.summary-card,
+.registration .main-card.summary-card,
+.registration .public-attendee-form-container.payments,
+.registration .main-card.payments,
+.registration .public-attendee-form-container.attendee-success-message,
+.registration .main-card.attendee-success-message {
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+
+}
