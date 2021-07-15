@@ -15,11 +15,14 @@
 }
 
 /* Navigation */
-
 nav[class*="cmpsr"][class*="cmpsr"] {
     width: 100%;
     max-width: var(--max-width);
     margin:  0 auto;
+}
+
+.nav-items > li {
+    margin: .25rem 0;
 }
 
 .nav-item.nav-item.nav-item {
@@ -39,8 +42,7 @@ nav[class*="cmpsr"][class*="cmpsr"] {
     border-bottom-color: var(--primary-500);
 }
 
-/* Box-container */
-
+/* Boxed container (with white BG mostly) */
 .white-panel, 
 .registration .public-attendee-form-container.add-new-participant, 
 .registration .main-card.add-new-participant,
@@ -53,4 +55,41 @@ nav[class*="cmpsr"][class*="cmpsr"] {
 .registration .public-attendee-form-container.attendee-success-message,
 .registration .main-card.attendee-success-message {
     box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+}
+
+/**
+ * Limit the width of the full wide block contents.
+ * 
+ * Tricky part is that they don't have a clear and stable unique class. The pattern of block seems to be "if it is a child of .block and has direct div with custom BG"
+ */
+.block > div[style*="background-image"] {
+    max-width: var(--max-width);
+    width: 100%;
+    margin: 0 auto;
+}
+
+/**
+ * Some Typography default styles
+ */
+h1 {
+    font-size: 3.157rem;
+}
+
+h2 {
+    font-size: 2.369rem;
+}
+
+h3 {
+    font-size: 1.777rem;
+}
+
+h4 {
+    font-size: 1.333rem;
+}
+
+p, li {
+    max-width: 80ch;
+    margin:  1.5em auto;
+    font-size: 1rem;
+    line-height: 1.55;
 }

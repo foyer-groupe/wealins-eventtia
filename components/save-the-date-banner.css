@@ -72,10 +72,13 @@
   
 /* Right side */
 .std-event-name {
-	color: var(--neutral-900);
-	font-size: 48px;
 	padding: 24px 24px 24px 64px;
 	align-self: center;
+}
+
+.std-event-name-text {
+	color: var(--neutral-900);
+	font-size: 48px;
 }
   
 .std-event-name b {
