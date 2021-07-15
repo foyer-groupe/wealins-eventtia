@@ -164,11 +164,12 @@ nav[class*="cmpsr"][class*="cmpsr"] {
 /**
  * Registration forms and other forms.
  */
-.registration,
 .registration-iframe {
+    display:  block;
     max-width: var(--max-width);
     width: 100%;
     margin: 0 auto 80px!important;
+    border-radius:  16px;
 }
 
 /**
@@ -212,7 +213,7 @@ footer .footer-items li {
 }
 
 /*  A link in the footer  */
-footer .footer-items li a.footer-item {
+footer .footer-items li a.footer-item:hover {
 
 }
 
