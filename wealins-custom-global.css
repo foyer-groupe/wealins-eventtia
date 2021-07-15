@@ -164,11 +164,11 @@ nav[class*="cmpsr"][class*="cmpsr"] {
 /**
  * Registration forms and other forms.
  */
-.registration:focus,
-.registration-iframe:hover {
-    max-width: 80px;
-    width: 50%;
-    margin: 0 100px 10px!important;
+.registration,
+.registration-iframe {
+    max-width: var(--max-width);
+    width: 100%;
+    margin: 0 auto 80px!important;
 }
 
 /**
