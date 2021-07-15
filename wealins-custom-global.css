@@ -162,6 +162,16 @@ nav[class*="cmpsr"][class*="cmpsr"] {
 }
 
 /**
+ * Registration forms and other forms.
+ */
+.registration:focus,
+.registration-iframe:hover {
+    max-width: 80px;
+    width: 50%;
+    margin: 0 100px 10px!important;
+}
+
+/**
  * Website FOOTER
  */
 footer .logo-wrapper {
