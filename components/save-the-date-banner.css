@@ -30,6 +30,7 @@
   
 .std-infos p {
 	margin: 0;
+	color: white;
 }
   
 .std-infos > p:first-child {
