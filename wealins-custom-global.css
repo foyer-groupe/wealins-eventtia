@@ -142,11 +142,17 @@ footer .logo-wrapper .copyright-msg.copyright-msg {
 
 /*  The list of links  */
 footer ul.footer-items.footer-items {
-    display: block;
-    align-self: flex-start;
-    column-count: 2;
-    min-height: auto;
     border:  0 none;
+}
+
+@media (min-width:  840px) {
+    footer ul.footer-items.footer-items {
+        display: block;
+        align-self: flex-start;
+        column-count: 2;
+        column-gap: 2rem;
+        min-height: auto;
+    }
 }
 
 footer .footer-items li {
