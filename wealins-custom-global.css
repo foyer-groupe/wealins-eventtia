@@ -66,6 +66,8 @@ nav[class*="cmpsr"][class*="cmpsr"] {
     max-width: var(--max-width);
     width: 100%;
     margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 /**
@@ -73,23 +75,71 @@ nav[class*="cmpsr"][class*="cmpsr"] {
  */
 h1 {
     font-size: 3.157rem;
+    color: var(--primary-500);
 }
 
 h2 {
     font-size: 2.369rem;
+    color: var(--primary-700);
 }
 
 h3 {
     font-size: 1.777rem;
+    color: var(--neutral-800);
 }
 
 h4 {
     font-size: 1.333rem;
+    color: var(--neutral-800);
 }
 
 p, li {
     max-width: 80ch;
-    margin:  1.5em auto;
     font-size: 1rem;
     line-height: 1.55;
+}
+
+p {
+    margin:  1.5em auto;
+    color: var(--neutral-900);
+}
+
+li {
+    margin:  .5rem auto;
+}
+
+/**
+ * Website FOOTER
+ */
+footer .logo-wrapper {
+
+}
+
+/* The logo image  */
+footer .logo-wrapper img {
+
+}
+
+/*  The copyright under the logo  */
+footer .logo-wrapper .copyright-msg {
+
+}
+
+/*  The list of links  */
+footer ul.footer-items {
+    border:  0 none;
+}
+
+footer .footer-items li {
+    margin:  0.5rem 0;
+}
+
+/*  A link in the footer  */
+footer .footer-items li a.footer-item {
+
+}
+
+/*  The social block  */
+footer > div:last-child {
+
 }
