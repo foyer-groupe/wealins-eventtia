@@ -121,6 +121,31 @@ li {
 }
 
 /**
+ * Buttons
+ * Well, buttons are links with random .cmpsrXXX classes. (TA eventtia)
+ * But, apparently, a last child "a" after a div (col content) seems to be our pattern.
+ */
+.block > div[style*="background-image"] div + a:last-child[class^="cmpsr"] {
+    font-weight:  bold;
+    background: var(--primary-500);
+}
+
+.block > div[style*="background-image"] div + a:last-child[class^="cmpsr"] p {
+    color:  white;
+}
+
+.block > div[style*="background-image"] div + a:last-child[class^="cmpsr"]:focus,
+.block > div[style*="background-image"] div + a:last-child[class^="cmpsr"]:hover {
+    background: var(--primary-600);
+    color:  white;
+}
+
+.block > div[style*="background-image"] div + a:last-child[class^="cmpsr"]:hover p,
+.block > div[style*="background-image"] div + a:last-child[class^="cmpsr"]:focus p {
+    color:  white;
+}
+
+/**
  * Website FOOTER
  */
 footer .logo-wrapper {
