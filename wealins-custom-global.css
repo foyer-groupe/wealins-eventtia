@@ -26,6 +26,20 @@
     background: var(--primary-700);
 }
 
+/**
+ * Links
+ */
+a:not([class^="cmpsr"]) {
+    color:  var(--primary-600);
+    text-decoration:  underline;
+}
+
+a:not([class^="cmpsr"]):hover,
+a:not([class^="cmpsr"]):focus {
+    color:  var(--primary-700);
+    text-decoration:  none;
+}
+
 /* Navigation */
 nav[class*="cmpsr"][class*="cmpsr"] {
     width: 100%;
@@ -85,38 +99,40 @@ nav[class*="cmpsr"][class*="cmpsr"] {
 /**
  * Some Typography default styles
  */
-h1 {
+[class^="cmpsr"] h1 {
+    margin-bottom: .75em;
     font-size: 3.157rem;
     color: var(--primary-500);
 }
 
-h2 {
+[class^="cmpsr"] h2 {
     font-size: 2.369rem;
     color: var(--primary-700);
 }
 
-h3 {
+[class^="cmpsr"] h3 {
     font-size: 1.777rem;
     color: var(--neutral-800);
 }
 
-h4 {
+[class^="cmpsr"] h4 {
     font-size: 1.333rem;
     color: var(--neutral-800);
 }
 
-p, li {
+[class^="cmpsr"] p,
+[class^="cmpsr"] li {
     max-width: 80ch;
     font-size: 1rem;
     line-height: 1.55;
 }
 
-p {
+[class^="cmpsr"] p {
     margin:  1.5em auto;
     color: var(--neutral-900);
 }
 
-li {
+[class^="cmpsr"] li {
     margin:  .5rem auto;
 }
 
