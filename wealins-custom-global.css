@@ -2,6 +2,7 @@
     --primary-010: #FAFAF2;
     --primary-200: #E2D9BC;
     --primary-300: #CDC091;
+    --primary-400: #BDAE73;
     --primary-500: #A49453;
     --primary-600: #867636;
     --primary-700: #534821;
@@ -132,17 +133,25 @@ footer .logo-wrapper img {
 }
 
 /*  The copyright under the logo  */
-footer .logo-wrapper .copyright-msg {
-
+footer .logo-wrapper .copyright-msg.copyright-msg {
+    font-size:  14px;
+    margin: 32px 0;
+    opacity:  .5;
+    color: var(--primary-400);
 }
 
 /*  The list of links  */
 footer ul.footer-items.footer-items {
+    display: block;
+    align-self: flex-start;
+    column-count: 2;
+    min-height: auto;
     border:  0 none;
 }
 
 footer .footer-items li {
-    margin:  0.5rem 0;
+    padding:  0.5rem 0;
+    margin:  0;
 }
 
 /*  A link in the footer  */
