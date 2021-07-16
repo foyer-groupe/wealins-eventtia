@@ -15,6 +15,13 @@
     --image: url(https://wealins.com/uploads/b74aa1aaa8b597aa2d9df5da0bc053e4.jpeg);
 
     --max-width: 1048px;
+    --block-spacing: 80px;
+}
+
+@media (max-width:  640px) {
+    :root {
+        --block-spacing: 40px;
+    }
 }
 
 /* For the sake of perfection */
@@ -94,8 +101,8 @@ nav[class*="cmpsr"][class*="cmpsr"] {
     max-width: var(--max-width);
     width: 100%;
     margin: 0 auto;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: var(--block-spacing);
+    padding-bottom: var(--block-spacing);
 }
 
 /**
@@ -181,6 +188,7 @@ nav[class*="cmpsr"][class*="cmpsr"] {
 /* The dark line */
 .timeline {
     --item-spacing: 56px;
+    margin-top: calc(var(--block-spacing) * -1);
 }
 
 .timeline > div::before {
@@ -242,6 +250,7 @@ nav[class*="cmpsr"][class*="cmpsr"] {
 }
 
 .timeline .speaker-list .picture {
+    pointer-events: none;
 }
 
 .timeline .speaker-list .speaker-name.speaker-name.speaker-name {
@@ -254,6 +263,13 @@ nav[class*="cmpsr"][class*="cmpsr"] {
 
 .timeline .speaker-list .speaker-secondary-info:empty {
     display: none;
+}
+
+/**
+ * Contact form
+ */
+.block [class^="cmpsr"][style*="rgb(80, 227, 194)"] {
+    margin-top: calc(var(--block-spacing, 80px) * -1);
 }
 
 /**
