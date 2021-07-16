@@ -267,16 +267,14 @@ nav[class*="cmpsr"][class*="cmpsr"] {
 
 /**
  * Contact form
+ * To be able to select it, we need the style background rgb to be that precise value.
  */
-.block [class^="cmpsr"][style*="rgb(80, 227, 194)"] {
+.block > [class^="cmpsr"] > [class^="cmpsr"][style*="rgb(80, 227, 194)"] {
     margin-top: calc(var(--block-spacing, 80px) * -1);
-    background: white!important;
 }
 
-.block [class^="cmpsr"][style*="rgb(80, 227, 194)"]::before {
-    display:  block;
-    content:  'Do not change the color (will not appear on production)';
-    font-weight:  bold;
+.block [class^="cmpsr"][style*="rgb(80, 227, 194)"] {
+    background: white!important;
 }
 
 /**
