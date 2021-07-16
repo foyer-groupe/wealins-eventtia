@@ -78,13 +78,13 @@
 	align-self: center;
 }
 
-.std-event-name-text {
+.std-event-name-text.std-event-name-text {
 	color: var(--neutral-900);
 	font-size: 48px;
 	line-height:  1.2;
 }
   
-.std-event-name b {
+.std-event-name.std-event-name b {
 	display: block;
 	font-size: 64px;
 }

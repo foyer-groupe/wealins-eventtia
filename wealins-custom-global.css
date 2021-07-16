@@ -173,6 +173,56 @@ nav[class*="cmpsr"][class*="cmpsr"] {
 }
 
 /**
+ * Timeline
+ */
+
+/* The dark line */
+.timeline > div::before {
+    background-color: black;
+    top: 30px;
+    left: 0rem;
+    width: 1px;
+    height: 75%;
+    content: "";
+    position: absolute;
+    border-radius: 0;
+}
+
+/* The event dot */
+.timeline > div > div::before {
+    top: 10px;
+    left: -23px;
+    width: 1em;
+    height: 1em;
+    content: "";
+    position: absolute;
+    border-radius: 5rem;
+    background: rgba(192, 177, 118, 1);
+}
+
+.timeline .leftInfo .time {
+    font-weight: bold;
+}
+
+.timeline .leftInfo .location {
+    color:  var(--neutral-700);
+}
+
+.timeline .leftInfo.leftInfo {
+    margin-left:  32px;
+}
+
+.timeline .workshop-name {
+    color: var(--primary-600);
+}
+
+.timeline .description-container .description {
+}
+
+.timeline .speaker-list {
+}
+
+/**
  * Website FOOTER
  */
 footer .logo-wrapper {
