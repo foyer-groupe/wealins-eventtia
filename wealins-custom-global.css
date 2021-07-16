@@ -27,12 +27,12 @@
 /* For the sake of perfection */
 ::selection {
     color: white;
-    background: var(--primary-700);
+    background: var(--primary-500);
 }
 
 ::-moz-selection {
     color: white;
-    background: var(--primary-700);
+    background: var(--primary-500);
 }
 
 /**
