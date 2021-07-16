@@ -1,0 +1,38 @@
+/*Ligne noir*/
+
+.cmpsr343::before {
+    background-color: black;
+}
+
+.cmpsr335::before {
+    top: 30px;
+    left: 0rem;
+    width: 1px;
+    height: 75%;
+    content: "";
+    position: absolute;
+    border-radius: 0;
+}
+
+/*Rond devant information*/
+.cmpsr344::before {
+    /* border: 0.1rem solid rgba(96, 88, 59, 1); */
+    background: rgba(192, 177, 118, 1);
+}
+
+.cmpsr338::before {
+    top: 10px;
+    left: -23px;
+    width: 1em;
+    height: 1EM;
+    content: "";
+    position: absolute;
+    border-radius: 5rem;
+}
+
+/*Information gauche réalignement*/
+
+.cmpsr344 .leftInfo {
+    left: -8rem;
+    width: 5rem;
+}
