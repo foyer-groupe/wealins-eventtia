@@ -270,6 +270,13 @@ nav[class*="cmpsr"][class*="cmpsr"] {
  */
 .block [class^="cmpsr"][style*="rgb(80, 227, 194)"] {
     margin-top: calc(var(--block-spacing, 80px) * -1);
+    background: white!important;
+}
+
+.block [class^="cmpsr"][style*="rgb(80, 227, 194)"]::before {
+    display:  block;
+    content:  'Do not change the color (will not appear on production)';
+    font-weight:  bold;
 }
 
 /**
