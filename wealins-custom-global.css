@@ -221,10 +221,31 @@ nav[class*="cmpsr"][class*="cmpsr"] {
 }
 
 .timeline .description-container .description {
-    font-size:  ;
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--neutral-600);
 }
 
 .timeline .speaker-list {
+}
+/* each speaker item */
+.timeline .speaker-list .speaker-info {
+    margin-left:  0;
+}
+
+.timeline .speaker-list .picture {
+}
+
+.timeline .speaker-list .speaker-name {
+    margin-bottom:  0;
+}
+
+.timeline .speaker-list .speaker-secondary-info {
+    margin-top:  0;
+}
+
+.timeline .speaker-list .speaker-secondary-info:empty {
+    display: none;
 }
 
 /**
