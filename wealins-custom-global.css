@@ -282,8 +282,25 @@ nav[class*="cmpsr"][class*="cmpsr"] {
 }
 
 .block label {
+    position: static!important;
+    display: inline-block;
+    margin-bottom: 4px;
+    font-size:  1.2rem!important;
     font-weight: bold;
     color:  var(--neutral-700);
+}
+
+
+.block label + div {
+    margin-top: 0!important;
+    padding-top: 0;
+    background:  var(--neutral-100);
+    border-bottom:  1px solid var(--neutral-300);
+}
+
+.block label + div > div::after {
+    border-bottom-color: var(--neutral-500);
+    border-bottom-width: 1px;
 }
 
 .block label + div[class^="cmpsr"]::before {
@@ -296,11 +313,6 @@ nav[class*="cmpsr"][class*="cmpsr"] {
 
 .block label + div[class^="cmpsr"] svg path:not([fill="none"]) {
     fill: var(--primary-400);
-}
-
-.block label + div {
-    background:  var(--neutral-100);
-    border-bottom:  1px solid var(--neutral-300);
 }
 
 .block label + div input,
