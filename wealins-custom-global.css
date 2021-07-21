@@ -1,5 +1,6 @@
 :root {
     --primary-010: #FAFAF2;
+    --primary-100: #F3EFE2;
     --primary-200: #E2D9BC;
     --primary-300: #CDC091;
     --primary-400: #BDAE73;
@@ -8,6 +9,7 @@
     --primary-700: #534821;
     --neutral-050: #F4F4F6;
     --neutral-100: #EAEAF3;
+    --neutral-300: #ACADBD;
     --neutral-500: #737589;
     --neutral-600: #464859;
     --neutral-700: #393B4B;
@@ -292,10 +294,19 @@ nav[class*="cmpsr"][class*="cmpsr"] {
     fill: var(--primary-400);
 }
 
-.block label + div input {
-    padding: 12px 8px;
+.block label + div {
     background:  var(--neutral-100);
-    border-bottom:  1px solid var(--neutral-500);
+    border-bottom:  1px solid var(--neutral-300);
+}
+
+.block label + div input,
+.block label + div textarea {
+    padding: 12px 8px;
+}
+
+.block label + div input,
+.block label + div textarea {
+    background:  var(--primary-100);
 }
 
 /**
