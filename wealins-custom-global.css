@@ -290,6 +290,10 @@ nav[class*="cmpsr"][class*="cmpsr"] {
     content: none;
 }
 
+.block label + div[class^="cmpsr"] svg {
+    margin-left:  8px;
+}
+
 .block label + div[class^="cmpsr"] svg path:not([fill="none"]) {
     fill: var(--primary-400);
 }
