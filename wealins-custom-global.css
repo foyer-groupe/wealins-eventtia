@@ -6,6 +6,8 @@
     --primary-500: #A49453;
     --primary-600: #867636;
     --primary-700: #534821;
+    --neutral-050: #F4F4F6;
+    --neutral-100: #EAEAF3;
     --neutral-500: #737589;
     --neutral-600: #464859;
     --neutral-700: #393B4B;
@@ -286,8 +288,14 @@ nav[class*="cmpsr"][class*="cmpsr"] {
     content: none;
 }
 
-.block label + div[class^="cmpsr"] svg path {
+.block label + div[class^="cmpsr"] svg path:not([fill="none"]) {
     fill: var(--primary-400);
+}
+
+.block label + div input {
+    padding: 12px 8px;
+    background:  var(--neutral-100);
+    border-bottom:  1px solid var(--neutral-500);
 }
 
 /**
