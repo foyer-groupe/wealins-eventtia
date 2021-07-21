@@ -304,8 +304,8 @@ nav[class*="cmpsr"][class*="cmpsr"] {
     padding: 12px 8px;
 }
 
-.block label + div input,
-.block label + div textarea {
+.block label + div input:focus,
+.block label + div textarea:focus {
     background:  var(--primary-100);
 }
 
