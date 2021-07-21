@@ -294,13 +294,14 @@ nav[class*="cmpsr"][class*="cmpsr"] {
 .block label + div {
     margin-top: 0!important;
     padding-top: 0;
+    padding-bottom: 0;
     background:  var(--neutral-100);
     border-bottom:  1px solid var(--neutral-300);
 }
 
 .block label + div > div::after {
-    border-bottom-color: var(--neutral-500);
-    border-bottom-width: 1px;
+    border-bottom-color: var(--neutral-500)!important;
+    border-bottom-width: 1px!important;
 }
 
 .block label + div[class^="cmpsr"]::before {
