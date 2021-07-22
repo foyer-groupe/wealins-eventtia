@@ -181,7 +181,7 @@ nav[class*="cmpsr"][class*="cmpsr"] {
     display:  block;
     max-width: var(--max-width);
     width: 100%;
-    margin: calc(var(--block-spacing) * -1) auto 80px!important;
+    margin: calc(var(--block-spacing) / 2 * -1) auto 80px!important;
     border-radius:  16px;
 }
 
