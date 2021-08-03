@@ -42,19 +42,23 @@
 /**
  * Links
  */
-a:not([class^="cmpsr"]) {
+a:not([class^="cmpsr"]),
+a:not([class^="live"]) {
     color:  var(--primary-600);
     text-decoration:  underline;
 }
 
 a:not([class^="cmpsr"]):hover,
-a:not([class^="cmpsr"]):focus {
+a:not([class^="cmpsr"]):focus,
+a:not([class^="live"]):hover,
+a:not([class^="live"]):focus {
     color:  var(--primary-700);
     text-decoration:  none;
 }
 
 /* Navigation */
-nav[class*="cmpsr"][class*="cmpsr"] {
+nav[class*="cmpsr"][class*="cmpsr"],
+nav[class*="live"][class*="live"] {
     width: 100%;
     max-width: var(--max-width);
     margin:  0 auto;
@@ -112,40 +116,48 @@ nav[class*="cmpsr"][class*="cmpsr"] {
 /**
  * Some Typography default styles
  */
-[class^="cmpsr"] h1 {
+[class^="cmpsr"] h1,
+[class^="live"] h1 {
     margin-bottom: .75em;
     font-size: 3.157rem;
     color: var(--primary-500);
 }
 
-[class^="cmpsr"] h2 {
+[class^="cmpsr"] h2,
+[class^="live"] h2 {
     font-size: 2.369rem;
     color: var(--primary-700);
 }
 
-[class^="cmpsr"] h3 {
+[class^="cmpsr"] h3,
+[class^="live"] h3 {
     font-size: 1.777rem;
     color: var(--neutral-800);
 }
 
-[class^="cmpsr"] h4 {
+[class^="cmpsr"] h4,
+[class^="live"] h4 {
     font-size: 1.333rem;
     color: var(--neutral-800);
 }
 
 [class^="cmpsr"] p,
-[class^="cmpsr"] li {
+[class^="cmpsr"] li,
+[class^="live"] p,
+[class^="live"] li {
     max-width: 80ch;
     font-size: 1rem;
     line-height: 1.55;
 }
 
-[class^="cmpsr"] p {
+[class^="cmpsr"] p,
+[class^="live"] p {
     margin:  1.5em auto;
     color: var(--neutral-900);
 }
 
-[class^="cmpsr"] li {
+[class^="cmpsr"] li,
+[class^="live"] li {
     margin:  .5rem auto;
 }
 
@@ -154,23 +166,29 @@ nav[class*="cmpsr"][class*="cmpsr"] {
  * Well, buttons are links with random .cmpsrXXX classes. (TA eventtia)
  * But, apparently, a last child "a" after a div (col content) seems to be our pattern.
  */
-.block > div[style*="background-image"] div + a:last-child[class^="cmpsr"] {
+.block > div[style*="background-image"] div + a:last-child[class^="cmpsr"],
+.block > div[style*="background-image"] div + a:last-child[class^="live"] {
     font-weight:  bold;
     background: var(--primary-500);
 }
 
-.block > div[style*="background-image"] div + a:last-child[class^="cmpsr"] p {
+.block > div[style*="background-image"] div + a:last-child[class^="cmpsr"] p,
+.block > div[style*="background-image"] div + a:last-child[class^="live"] p {
     color:  white;
 }
 
 .block > div[style*="background-image"] div + a:last-child[class^="cmpsr"]:focus,
-.block > div[style*="background-image"] div + a:last-child[class^="cmpsr"]:hover {
+.block > div[style*="background-image"] div + a:last-child[class^="cmpsr"]:hover,
+.block > div[style*="background-image"] div + a:last-child[class^="live"]:focus,
+.block > div[style*="background-image"] div + a:last-child[class^="live"]:hover {
     background: var(--primary-600);
     color:  white;
 }
 
 .block > div[style*="background-image"] div + a:last-child[class^="cmpsr"]:hover p,
-.block > div[style*="background-image"] div + a:last-child[class^="cmpsr"]:focus p {
+.block > div[style*="background-image"] div + a:last-child[class^="cmpsr"]:focus p,
+.block > div[style*="background-image"] div + a:last-child[class^="live"]:hover p,
+.block > div[style*="background-image"] div + a:last-child[class^="live"]:focus p {
     color:  white;
 }
 
@@ -273,11 +291,13 @@ nav[class*="cmpsr"][class*="cmpsr"] {
  * Contact form
  * To be able to select it, we need the style background rgb to be that precise value.
  */
-.block > [class^="cmpsr"] > [class^="cmpsr"][style*="rgb(80, 227, 194)"] {
+.block > [class^="cmpsr"] > [class^="cmpsr"][style*="rgb(80, 227, 194)"],
+.block > [class^="live"] > [class^="live"][style*="rgb(80, 227, 194)"] {
     margin-top: calc(var(--block-spacing, 80px) * -1);
 }
 
-.block [class^="cmpsr"][style*="rgb(80, 227, 194)"] {
+.block [class^="cmpsr"][style*="rgb(80, 227, 194)"],
+.block [class^="live"][style*="rgb(80, 227, 194)"] {
     background: white!important;
 }
 
@@ -304,15 +324,18 @@ nav[class*="cmpsr"][class*="cmpsr"] {
     border-bottom-width: 1px!important;
 }
 
-.block label + div[class^="cmpsr"]::before {
+.block label + div[class^="cmpsr"]::before,
+.block label + div[class^="live"]::before {
     content: none;
 }
 
+.block label + div[class^="live"] svg,
 .block label + div[class^="cmpsr"] svg {
     margin-left:  8px;
 }
 
-.block label + div[class^="cmpsr"] svg path:not([fill="none"]) {
+.block label + div[class^="cmpsr"] svg path:not([fill="none"]),
+.block label + div[class^="live"] svg path:not([fill="none"]) {
     fill: var(--primary-400);
 }
 
