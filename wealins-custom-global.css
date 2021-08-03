@@ -16,7 +16,11 @@
     --neutral-800: #2E3142;
     --neutral-900: #222434;
 
-    --image: url(https://wealins.com/uploads/b74aa1aaa8b597aa2d9df5da0bc053e4.jpeg);
+    --image-default: url(https://static.foyer.lu/images/D2/photowealinsforagenericevents.D254F3EC820A850B7B890C3A77406239BF296B02.jpg);
+    --image-capibelgium: url(https://static.foyer.lu/images/39/photoeventcapibelgiumforwealins.39E34CB8B12D53A7154EDDFEC28B6A4F0B2C85ED.jpg);
+    --image-golf: url(https://static.foyer.lu/images/9A/photoofthegolfeventsforwealins.9A0E2117DF7C01D8808F8EC097FEC46AF5B62BAF.jpg);
+
+    --image: var(--image-default);
 
     --max-width: 1048px;
     --block-spacing: 80px;
@@ -118,7 +122,7 @@ nav[class*="live"][class*="live"] {
  */
 [class^="cmpsr"] h1,
 [class^="live"] h1 {
-    margin-bottom: .75em;
+    margin-bottom: .25em;
     font-size: 3.157rem;
     color: var(--primary-500);
 }
@@ -168,6 +172,7 @@ nav[class*="live"][class*="live"] {
  */
 .block > div[style*="background-image"] div + a:last-child[class^="cmpsr"],
 .block > div[style*="background-image"] div + a:last-child[class^="live"] {
+    text-decoration: none;
     font-weight:  bold;
     background: var(--primary-500);
 }
@@ -182,7 +187,8 @@ nav[class*="live"][class*="live"] {
 .block > div[style*="background-image"] div + a:last-child[class^="live"]:focus,
 .block > div[style*="background-image"] div + a:last-child[class^="live"]:hover {
     background: var(--primary-600);
-    color:  white;
+    color: white;
+    text-decoration: none;
 }
 
 .block > div[style*="background-image"] div + a:last-child[class^="cmpsr"]:hover p,
@@ -390,7 +396,8 @@ footer .footer-items li {
 }
 
 /*  A link in the footer  */
-footer .footer-items li a.footer-item:hover {
+footer .footer-items li a.footer-item:hover,
+footer .footer-items li a.footer-item:focus {
     color: var(--primary-500);
 }
 

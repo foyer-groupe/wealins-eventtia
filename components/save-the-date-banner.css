@@ -131,11 +131,11 @@
 		font-size: 16px;
 	}
 
-	.std-event-name {
+	.std-event-name-text.std-event-name-text {
 		font-size: 24px;
 	}
 
-	.std-event-name b {
+	.std-event-name-text.std-event-name-text b {
 		font-size: 32px;
 	}
 
