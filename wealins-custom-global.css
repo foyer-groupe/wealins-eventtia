@@ -19,7 +19,7 @@
     --image-default: url(https://static.foyer.lu/images/D2/photowealinsforagenericevents.D254F3EC820A850B7B890C3A77406239BF296B02.jpg);
     --image-capibelgium: url(https://static.foyer.lu/images/39/photoeventcapibelgiumforwealins.39E34CB8B12D53A7154EDDFEC28B6A4F0B2C85ED.jpg);
     --image-golf: url(https://static.foyer.lu/images/9A/photoofthegolfeventsforwealins.9A0E2117DF7C01D8808F8EC097FEC46AF5B62BAF.jpg);
-    --image-building: url(https://static.foyer.lu/images/69/wealinsevent30yearsatluxembourg.698A4BBCDB5F08E5F6A1FB42DEB04588516F116E.png)
+    --image-building: url(https://static.foyer.lu/images/69/wealinsevent30yearsatluxembourg.698A4BBCDB5F08E5F6A1FB42DEB04588516F116E.png);
 
     --image: var(--image-default);
 
