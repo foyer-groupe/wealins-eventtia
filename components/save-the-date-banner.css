@@ -97,6 +97,13 @@
 	height: 54px;
 }
 
+/* If there is an image as event announcement */
+.std-event-image img {
+	width: 100%;
+	height: 100%;
+	fit-content: cover;
+}
+
 @media (max-width: 930px) {
 	.save-the-date {
 		padding: 80px 16px;
