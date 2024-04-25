@@ -200,6 +200,16 @@ nav[class*="live"][class*="live"] {
 }
 
 /**
+ * Right aligned text on mobile, let's deal with it since Eventtia can't do it
+ */
+@media (max-width: 800px) {
+    .block div[class^="cmpsr"] div[style$=*"text-align: right"],
+    .block div[class^="live"] div[style$=*"text-align: right"] {
+        text-align: left!important;
+    }
+}
+
+/**
  * Registration forms and other forms.
  */
 .registration-iframe {
