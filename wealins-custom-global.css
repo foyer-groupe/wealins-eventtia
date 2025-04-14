@@ -1,3 +1,4 @@
+/* Last edited: 14 april, 2025 */
 :root {
     --primary-010: #FAFAF2;
     --primary-100: #F3EFE2;
@@ -110,8 +111,15 @@ nav[class*="live"][class*="live"] {
  * 
  * Tricky part is that they don't have a clear and stable unique class. The pattern of block seems to be "if it is a child of .block and has direct div with custom BG"
  */
-.block > div[style*="background-image"] {
-    max-width: var(--max-width);
+/* Added in 2025 */
+.block > div:has(div[style*="background-image"]) {
+    margin: 0;
+    padding: 0;
+}
+/* Added END */
+
+.block > div > div[style*="background-image"] {
+    /* max-width: var(--max-width); Edited in 2025 */
     width: 100%;
     margin: 0 auto;
     padding-top: var(--block-spacing);
